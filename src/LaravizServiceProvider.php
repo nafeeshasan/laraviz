@@ -23,7 +23,7 @@ class LaravizServiceProvider extends BaseServiceProvider
     
     public function boot()
     {
-        $dir = __DIR__.'/..';
+        $dir = __DIR__;
         
         // Configuration Files
         $this->mergeConfigFrom("$dir/config/laraviz.php", 'laraviz');
